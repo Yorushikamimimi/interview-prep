@@ -72,7 +72,7 @@ public class MarkdownParser {
 
         if (content.startsWith("### ") || content.startsWith("## ")) {
             java.util.regex.Pattern solutionMarker = java.util.regex.Pattern.compile(
-                    "(?m)^#{2,3} (核心思路|解题思路|解法|ACM|LeetCode 提交)"
+                    "(?m)^#{2,3} (\\d+\\.\\s+)?(核心思路|解题思路|解法|ACM|LeetCode 提交)"
             );
             java.util.regex.Matcher m = solutionMarker.matcher(content);
             if (m.find()) {
