@@ -111,16 +111,3 @@
 优化方案：
 - 游标分页：记住上一页最后 ID，`WHERE id > last_id LIMIT 10`
 - 先查 ID 再回表：`SELECT * FROM t WHERE id IN (SELECT id ... LIMIT)`
-
----
-
-## 高频对比速记
-
-| 对比 | 核心区别 |
-|------|----------|
-| 聚簇 vs 非聚簇 | 叶子存数据 vs 叶子存主键 |
-| 回表 vs 覆盖索引 | 多查一次 vs 索引直接返回 |
-| redo vs undo vs binlog | 持久性 / 回滚+MVCC / 归档复制 |
-| 脏读 vs 不可重复读 vs 幻读 | 未提交 / 同行改了 / 行数变了 |
-| InnoDB vs MyISAM | 事务+行锁 vs 无事务+表锁 |
-| 行锁 vs 表锁 | 并发好 vs 冲突大 |

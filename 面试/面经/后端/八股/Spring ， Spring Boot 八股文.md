@@ -114,15 +114,3 @@
 **答:** Spring 提供核心能力（IoC/AOP/事务/MVC），Spring Boot 在此基础上通过自动配置 + Starter + 内嵌服务器简化配置、快速开发。
 
 - Starter = 场景化依赖套餐
-
----
-
-## 高频对比速记
-
-| 对比 | 核心区别 |
-|------|----------|
-| IoC vs DI | 思想 vs 实现 |
-| JDK 代理 vs CGLIB | 基于接口 vs 基于继承 |
-| BeanFactory vs ApplicationContext | 基础容器 vs 完整容器 |
-| Spring vs Spring Boot | 核心能力 vs 简化提效 |
-| REQUIRED vs REQUIRES_NEW | 共用事务 vs 强制新开 |

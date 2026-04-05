@@ -105,19 +105,3 @@
 
 - 优点：灵活，框架必备
 - 缺点：性能较差，破坏封装
-
----
-
-## 高频对比速记
-
-| 对比 | 核心区别 |
-|------|----------|
-| == vs equals() | 地址/值比较 vs 逻辑相等 |
-| 重载 vs 重写 | 同类参数不同 vs 子类重写父类 |
-| StringBuilder vs StringBuffer | 线程不安全快 vs 线程安全慢 |
-| 基本类型 vs 包装类型 | 值 vs 对象 |
-| final vs finally vs finalize | 关键字 / 异常块 / 回收前方法 |
-| 接口 vs 抽象类 | 能力规范 / 公共模板 |
-| checked vs unchecked | 编译期强制 / 运行期不强制 |
-| throw vs throws | 抛异常动作 / 方法签名声明 |
-| 深拷贝 vs 浅拷贝 | 内部引用独立 / 内部引用共用 |
